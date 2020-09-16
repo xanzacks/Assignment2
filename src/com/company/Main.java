@@ -20,6 +20,7 @@ public class Main {
         int time1 = Integer.parseInt(timein.substring(1, 5));
         int time2 = Integer.parseInt(timein.substring(6, 10));
         if(time1 > 2400 || time2 > 2400){
+            System.out.println("There is something wrong with the input, exiting...");
             System.exit(2);
         }
         if(time2 >= time1){
