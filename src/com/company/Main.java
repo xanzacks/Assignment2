@@ -19,6 +19,9 @@ public class Main {
         //extracting numbers from the user input
         int time1 = Integer.parseInt(timein.substring(1, 5));
         int time2 = Integer.parseInt(timein.substring(6, 10));
+        if(time1 > 2400 || time2 > 2400){
+            System.exit(2);
+        }
         if(time2 >= time1){
             int difference = timetosec(time2) - timetosec(time1);
             timecal(difference);
