@@ -18,7 +18,7 @@ public class Main {
     public static void timeinprocessor (String timein){//This function is to read from input and allocate time to difference cases
         //extracting numbers from the user input
         int time1 = Integer.parseInt(timein.substring(1, 5));
-        int time2 = Integer.parseInt(timein.substring(6, 10));
+        int time2 = Integer.parseInt(timein.substring(7, 11));
         if(time1 > 2400 || time2 > 2400){
             System.out.println("There is something wrong with the input, exiting...");
             System.exit(2);
